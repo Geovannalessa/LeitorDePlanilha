@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de Planilha</title>
+    <script defer src="./leitor.js"></script>
+</head>
+<body>
+    <h2>Leitor de Planilha SheetJs</h2>
+    <div style="display: flex; background-color: #CCCC;">
+        <label for="planilha">Selecione uma planilha:</label> 
+        <input id="arquivo" type="file" accept=".xlsx, .csv" name="planilha" >
+    </div>
+    <table border="1" summary="Criado para aparecer o conteudo do arquivo excel selecionado." id="tabela" >
+        <thead>
+            <tr>
+                <th>Cabeçalho</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Conteudo</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
